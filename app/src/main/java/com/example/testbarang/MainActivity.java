@@ -6,27 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
+import com.example.testbarang.Database.LihatTeman;
 import com.example.testbarang.R;
 
 public class MainActivity extends AppCompatActivity {
-
-    Button btnTambah;
+    Button tambahbtn,lihatbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tambahbtn = findViewById(R.id.btnInsert);
+        lihatbtn = findViewById(R.id.btnSelect);
 
-        btnTambah = findViewById(R.id.buttonsbmt);
-
-        btnTambah.setOnClickListener(new View.OnClickListener() {
+        lihatbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, TambahData.class);
-                startActivity(i);
+                Intent intent =  new Intent(MainActivity.this,LihatTeman.class);
+                startActivity(intent);
 
             }
         });
