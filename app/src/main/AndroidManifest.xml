@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TestBarang">
         <activity android:name=".Database.TemanEdit"></activity>
         <activity android:name=".Database.TambahTeman" />
-        <activity android:name=".Database.ActivityLihatTeman" />
+        <activity android:name=".Database.LihatTeman" />
         <activity android:name=".TambahData" />
         <activity android:name=".MainActivity">
             <intent-filter>
